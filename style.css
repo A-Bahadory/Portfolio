@@ -1,57 +1,35 @@
-/* Design tokens */
-:root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
-}
-/* General Styles */
-html,
-body {
-  scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
+  background-color: aqua;
+} 
+
+.container {
   display: grid;
-  margin: auto;
-  min-height: 100vh;
-  gap: var(--gap);
-  max-width: var(--container);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 100px 320px 400px 100px
 }
-a,
-a:any-link {
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color ease-in-out 0.3s;
-}
-a:hover,
-a:focus {
-  color: var(--brand);
-  border-color: currentColor;
-}
-/* Site header and navigation */
-body > header {
-  background: var(--paper);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: var(--gap);
+.container :nth-child(1) {
+  background-color: green;
 }
 
-/* Text readability */
-section p {
-  line-height: 1.5;
-  max-width: 55ch;
+.container :nth-child(2) {
+  background-color: blue;
+}
+.container :nth-child(3) {
+  background-color: yellow;
+}
+.container :nth-child(4) {
+  background-color: brown;
+  
+}
+
+/* header section */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
