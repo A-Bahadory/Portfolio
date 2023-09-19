@@ -7,29 +7,130 @@ body {
   background-color: aqua;
 } 
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 100px 320px 400px 100px
-}
-.container :nth-child(1) {
-  background-color: green;
-}
-
-.container :nth-child(2) {
-  background-color: blue;
-}
-.container :nth-child(3) {
-  background-color: yellow;
-}
-.container :nth-child(4) {
-  background-color: brown;
-  
-}
 
 /* header section */
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 16%;
+  background: transparent;
+  transition: all .50s ease;
+}
+
+.logo {
+  font-size: 36px;
+  color: blue;
+  font-weight: 600;
+}
+.navlist {
+  display: flex;
+}
+.navlist a{
+  font-size: 20px;
+  font-weight: 500;
+  color: blue;
+  margin-left: 40px;
+  transition: all .50s ease;
+}
+.navlist a:hover{
+  color: brown;
+  text-shadow: 3px 3px 20px;
+}
+.h-btn{
+  display: inline-block;
+  padding: 11px 26px;
+  background: transparent;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .50s ease;
+}
+.h-btn:hover{
+  background: blue;
+  color: blueviolet;
+  box-shadow: 0 0 20px blue;
+  transform: scale(1.1);
+}
+
+/* section part style */
+section{
+  padding: 110px 16% 90%;
+}
+.hero {
+height: 100vh;
+width: 100%;
+background-color: wheat;
+background-position: cover;
+background-size: cover;
+
+
+}
+
+.main-content {
+  margin-top: 50px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400px;
+  width: 620px;
+  max-width: 100%;
+  color: blue;
+  line-height: black;
+  margin-bottom: 30px;
+}
+.main-content h4{
+  font-size: 1.6rem;
+}
+.main-content h1{
+  font-size: 20px;
+  font-weight: 900;
+  margin: 20px 0px 20px;
+  line-height: ;
+}
+.main-content p{
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 100%;
+  color:blueviolet;
+  line-height: 15px;
+}
+.social svg{
+  margin: 10px;
+}
+.social svg:hover{
+transform: scale(1.3);
+box-shadow: 0 0 10px black;
+}
+.social {
+  margin-bottom: 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .50s ease;
+}
+.btn:hover{
+  background: transparent;
+  color: blue;
+  box-shadow: 0 0 20px blue;
+  transform: scale(1.1);
+}
+.btn {
+  background: transparent;
+  color: blueviolet;
+  border: 2px solid green;
+  margin-left: 8px;
+  transition: all .50s ease;
 }
