@@ -73,6 +73,9 @@ background-size: cover;
 
 
 }
+a {
+  text-decoration: none;
+}
 
 .main-content {
   margin-top: 50px;
